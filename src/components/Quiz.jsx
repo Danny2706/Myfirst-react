@@ -19,7 +19,7 @@ function Quiz() {
         setLock(true);
         setScore((prev) => prev + 1);
       } else {
-        e.target.classList.add("Wrong");
+        e.target.classList.add("Wrong Answer");
         setLock(true);
         choice_array[question.ans - 1].current.classList.add("Correct");
       }
